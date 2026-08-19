@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,86 +7,135 @@
 <title>Ahmed Samir</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    min-height: 100vh;
-    background: #050505;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+    min-height:100vh;
+    background:
+        radial-gradient(circle at top,#252525,#080808 45%,#000);
+    color:white;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
 }
 
-.card {
-    width: 90%;
-    max-width: 430px;
-    padding: 40px 25px;
-    text-align: center;
-    background: #0b0b0b;
-    border: 1px solid #252525;
-    border-radius: 28px;
-    box-shadow: 0 0 50px rgba(255,255,255,0.08);
+.card{
+    width:92%;
+    max-width:430px;
+    padding:45px 25px;
+    text-align:center;
+    background:rgba(12,12,12,.92);
+    border:1px solid #333;
+    border-radius:30px;
+    box-shadow:0 0 80px rgba(255,255,255,.08);
+    animation:show 1.2s ease;
 }
 
-.avatar {
-    width: 115px;
-    height: 115px;
-    margin: auto;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    background: linear-gradient(135deg,#111,#777);
-    border: 2px solid #333;
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translateY(40px) scale(.95);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
 }
 
-h1 {
-    margin-top: 22px;
-    font-size: 27px;
-    letter-spacing: 3px;
+.avatar{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:38px;
+    font-weight:bold;
+    letter-spacing:4px;
+
+    background:linear-gradient(135deg,#050505,#777,#111);
+    border:2px solid #444;
+
+    box-shadow:0 0 35px rgba(255,255,255,.15);
+
+    animation:pulse 3s infinite;
 }
 
-.bio {
-    margin: 18px 0 28px;
-    line-height: 2;
-    color: #ccc;
-    font-size: 14px;
-    letter-spacing: 1px;
+@keyframes pulse{
+    50%{
+        box-shadow:0 0 50px rgba(255,255,255,.25);
+    }
 }
 
-.btn {
-    display: block;
-    padding: 16px;
-    margin: 13px 0;
-    color: white;
-    text-decoration: none;
-    background: #151515;
-    border: 1px solid #292929;
-    border-radius: 15px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transition: 0.3s;
+h1{
+    margin-top:24px;
+    font-size:29px;
+    letter-spacing:4px;
 }
 
-.btn:hover {
-    background: #252525;
-    transform: scale(1.03);
+.tag{
+    margin-top:10px;
+    color:#777;
+    font-size:11px;
+    letter-spacing:4px;
 }
 
-.footer {
-    margin-top: 28px;
-    color: #555;
-    font-size: 11px;
-    letter-spacing: 3px;
+.bio{
+    margin:27px 0;
+    line-height:2.1;
+    color:#ddd;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+.m5{
+    margin:22px 0;
+    padding:17px;
+    border:1px solid #333;
+    border-radius:17px;
+
+    background:linear-gradient(90deg,#111,#1f1f1f,#111);
+
+    font-weight:bold;
+    letter-spacing:2px;
+
+    animation:glow 2.5s infinite;
+}
+
+@keyframes glow{
+    50%{
+        box-shadow:0 0 30px rgba(255,255,255,.12);
+    }
+}
+
+.uncle{
+    margin-top:25px;
+    padding:18px;
+
+    border:1px solid #292929;
+    border-radius:17px;
+
+    color:#bbb;
+    font-size:13px;
+    font-style:italic;
+    letter-spacing:1px;
+
+    background:#0d0d0d;
+}
+
+.footer{
+    margin-top:32px;
+    color:#555;
+    font-size:10px;
+    letter-spacing:4px;
 }
 </style>
 </head>
@@ -99,16 +148,24 @@ h1 {
 
     <h1>AHMED SAMIR 🖤</h1>
 
+    <div class="tag">
+        TRADER • BUILDER • FUTURE MADE
+    </div>
+
     <div class="bio">
         <b>NO LIMITS. NO EXCUSES.</b><br>
         📈 BUILDING MY FUTURE<br>
-        💎 DREAM BIG. MOVE DIFFERENT.<br>
-        🥂 LEGACY IN THE MAKING.
+        💎 DREAM BIG. MOVE DIFFERENT.
     </div>
 
-    <a class="btn" href="#">INSTAGRAM</a>
-    <a class="btn" href="#">TIKTOK</a>
-    <a class="btn" href="#">WHATSAPP</a>
+    <div class="m5">
+        🏁 BMW M5 LOADING... 🔥
+    </div>
+
+    <div class="uncle">
+        “NEVER FORGET WHO I AM...<br>
+        I'M YOUR UNCLE.” 🥂
+    </div>
 
     <div class="footer">
         RISE • BUILD • DOMINATE
